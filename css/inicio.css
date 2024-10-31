@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #F0F0F0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 7em;
+}
+
+a{
+    text-decoration: none;
+}
+
+figcaption{
+    background: rgb(235, 235, 235);
+    padding: 0.3em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+#titulo_header{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 64px;
+}
+
+#itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.li_cabecalho li{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 23px;
+}
+
+.li_cabecalho li a{
+    color: #28272E;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:hover{
+    color: #624fce;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:active{
+    color: #2a6086;
+}
+
+#introducao{
+    background: url(/img/image\ escola\ 2.png) bottom no-repeat #28272E ;
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_introducao{
+    font-weight: 700;
+    color: #F0F0F0;
+}
+
+#elementos_introducao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+#titulo_introducao{
+    font-size: 90px;
+    line-height: 100px;
+    font-family: "Inter", sans-serif;
+}
+
+#resumo_introducao{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-family: "Inria Sans", sans-serif;
+}
+
+#logo_escola{
+    width: 36em;
+}
+
+#seta-rolamento{
+    width: 4em;
+    transition: 0.6s;
+}
+
+#seta-rolamento:hover{
+    opacity: 0.3;
+}
+
+.diretoresEscola{
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diretoresEscola figure{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#textos_diretores{
+    color: #28272E;
+    font-weight: 700;
+    padding-right: 6em;
+}
+
+#textos_diretores h2{
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+}
+
+#textos_diretores p{
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.botao_diretoresescola{
+    padding: 15px 35px;
+    background: #3742FA;
+    color: #F0F0F0;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    box-shadow: 0px 5px 15px 0px rgba(37, 44, 97, 0.15), 0px 5px 1px 0px rgba(136, 144, 194, 0.20);
+    text-shadow: 0px 2px 0px rgba(218, 218, 218, 0.25);
+    border-radius: 12px;
+    transition: background 0.4s;
+}
+
+.botao_diretoresescola:hover{
+    background: #002e52;
+}
+
+#escola{
+    background: #28272E;
+}
+
+#textos_escola{
+    color: #F0F0F0;
+    font-weight: 700;
+    padding-right: 6em;
+}
+
+#textos_escola h2{
+    font-size: 96px;
+    font-family: "Inter", sans-serif;  
+}
+
+#textos_escola p{
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: "Inria Sans", sans-serif;
+}
+
+#localizacao{
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#texto_localizacao{
+    color: #28272E;
+    font-weight: 700;
+    padding-left: 5em;
+}
+
+#texto_localizacao h2{
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+}
+
+#texto_localizacao p{
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: "Inria Sans", sans-serif;
+}
+
+#localizacao iframe{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+footer{
+    background: #28272E;
+}
+
+footer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 1.5em;
+    color: #F0F0F0;
+    text-align: center;
+}
+
+
