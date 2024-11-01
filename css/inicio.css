@@ -5,6 +5,7 @@ body{
     background-color: #F0F0F0;
 }
 
+/*Cabecalho*/
 header {
     display: flex;
     flex-direction: row;
@@ -60,6 +61,7 @@ figcaption{
     color: #2a6086;
 }
 
+/*Introdução*/
 #introducao{
     background: url(/img/image\ escola\ 2.png) bottom no-repeat #28272E ;
     padding: 3em 7em;
@@ -109,6 +111,7 @@ figcaption{
     opacity: 0.3;
 }
 
+/*Diretores*/
 .diretoresEscola{
     padding: 3em 7em;
     display: flex;
@@ -142,6 +145,7 @@ figcaption{
     font-family: "Inria Sans", sans-serif;
 }
 
+
 .botao_diretoresescola{
     padding: 15px 35px;
     background: #3742FA;
@@ -159,6 +163,7 @@ figcaption{
     background: #002e52;
 }
 
+/*Escola*/
 #escola{
     background: #28272E;
 }
@@ -184,6 +189,7 @@ figcaption{
     font-family: "Inria Sans", sans-serif;
 }
 
+/*Localização*/
 #localizacao{
     padding: 3em 7em;
     display: flex;
@@ -217,6 +223,7 @@ figcaption{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/*Rodapé*/
 footer{
     background: #28272E;
 }

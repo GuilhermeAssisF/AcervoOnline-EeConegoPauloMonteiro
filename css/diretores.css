@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #F0F0F0;
+}
+
+
+/*Cabecalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 7em;
+}
+
+a{
+    text-decoration: none;
+}
+
+figcaption{
+    background: rgb(235, 235, 235);
+    padding: 0.3em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+#titulo_header{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 64px;
+}
+
+#itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.li_cabecalho li{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 23px;
+}
+
+.li_cabecalho li a{
+    color: #28272E;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:hover{
+    color: #624fce;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:active{
+    color: #2a6086;
+}
+
+/*Planilha*/
+#donateBtn{
+    background: #28272E;
+    color: #F0F0F0;
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#actions-table h2{
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    
+}
+
+.custom-blue-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5em 7em;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+#actions-table tr {
+    border-bottom: 1px solid rgb(219, 219, 219, 0.3) ; /* Define a linha abaixo de cada linha */
+}
+
+/* Exemplo de estilos para colunas */
+.col-0 {
+    padding-right: 3em;
+    padding-bottom: 0.2em;
+    padding-top: 0.3em; /* Cor de fundo para a primeira coluna */  
+}
+
+.col-1 {
+    font-style: italic;
+}
+
+#seta-rolamento{
+    padding-top: 3em;
+    width: 4em;
+    transition: 0.6s;
+}
+
+#seta-rolamento:hover{
+    opacity: 0.3;
+}
+
+/*Diretores*/
+.diretor-light{
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #28272E;
+}
+
+.diretor-light figure{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.textos_diretor{
+    color: #28272E;
+    font-weight: 700;
+    padding-left: 6em;
+}
+
+
+
+.textos_diretor h2{
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+}
+
+.textos_diretor p{
+    padding-top: 1em;
+    padding-bottom: 0em;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Inria Sans", sans-serif;
+}
+
+#almerinda h2{
+    font-size: 40px;
+}
+
+#almerinda p{
+    font-size: 20px;
+}
+
+#mariaceleste h2{
+    font-size: 40px;
+}
+
+#mariaceleste p{
+    font-size: 20px;
+}
+
+#mariajose h2{
+    font-size: 35px;
+}
+
+#mariajose p{
+    font-size: 20px;
+}
+
+#reginaferreira h2{
+    font-size: 40px;
+}
+
+#reginaferreira p{
+    font-size: 20px;
+}
+
+#ormindamaria h2{
+    font-size: 34px;
+}
+
+#ormindamaria p{
+    font-size: 20px;
+}
+
+#denize h2{
+    font-size: 34px;
+}
+
+#denize p{
+    font-size: 16px;
+    font-weight: 600;
+}
+/*Rodapé*/
+footer{
+    background: #28272E;
+}
+
+footer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 1.5em;
+    color: #F0F0F0;
+    text-align: center;
+}
