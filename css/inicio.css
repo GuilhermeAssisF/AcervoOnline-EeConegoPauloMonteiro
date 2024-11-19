@@ -236,4 +236,278 @@ footer p{
     text-align: center;
 }
 
+/*Botao Hamburguer*/
+#menu {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Esconde o botão por padrão */
+}
+
+#itens_cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    #hamburger {
+        display: block; /* Exibe o botão de hambúrguer em telas pequenas */
+    }
+
+    #itens_cabecalho {
+        display: none; /* Esconde os itens do menu por padrão */
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 30px;
+        right: -47vw;
+        background-color: #F0F0F0;
+        width: 101vw;
+        padding: 20px;
+    }
+
+    #itens_cabecalho li {
+        font-size: 20px;
+    }
+
+    #itens_cabecalho.show {
+        display: flex; /* Exibe o menu quando a classe "show" é adicionada */
+    }
+
+    #introducao {
+        background: url(/img/image\ escola\ 2.png) no-repeat center center;
+        background-size: cover; /* Garante que a imagem cubra toda a seção */
+        padding: 3em 7em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    #titulo_header {
+        font-size: 48px;
+    }
+
+    #itens_cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #introducao {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    #elementos_introducao {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #titulo_introducao {
+        font-size: 70px;
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    #resumo_introducao {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    #logo_escola{
+        display: none;
+    }
+
+    .botao_diretoresescola {
+        padding: 15px 35px;
+        background: #3742FA;
+        color: #F0F0F0;
+        font-family: "Inria Sans", sans-serif;
+        font-weight: 600;
+        font-size: 35px;
+        box-shadow: 0px 5px 15px 0px rgba(37, 44, 97, 0.15), 0px 5px 1px 0px rgba(136, 144, 194, 0.20);
+        text-shadow: 0px 2px 0px rgba(218, 218, 218, 0.25);
+        border-radius: 12px;
+        transition: background 0.4s;
+        position: relative; /* Garante que o botão fique dentro da área da seção */
+        
+    }
+    
+    .botao_diretoresescola:hover {
+        background: #002e52;
+    }
+    
+
+    .diretoresEscola {
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+    }
+
+    #textos_diretores, #textos_escola {
+        padding: 0;
+    }
+
+    #textos_diretores h2, #textos_escola h2 {
+        font-size: 82px;
+    }
+
+    #textos_diretores p, #textos_escola p {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+
+    figure{
+        margin-top: 4em;
+        box-shadow: none;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #localizacao {
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+    }
+
+    #texto_localizacao {
+        padding: 0;
+    }
+
+    #texto_localizacao h2 {
+        font-size: 72px;
+    }
+
+    #texto_localizacao p {
+        font-size: 30px;
+        line-height: 1.3em;
+    }
+
+    iframe {
+        margin-bottom: 40px;
+    }
+}
+
+/* Reseta margens e padding para garantir o controle total do layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso impede que as margens e o padding causem overflow */
+}
+
+/* Responsividade para telas de 430px x 932px */
+/* Ajuste para telas pequenas */
+@media (max-width: 430px) {
+
+    /* Título */
+    #titulo_header {
+        font-size: 28px; /* Reduzido para cabeçalhos menores */
+    }
+
+    /* Links do cabeçalho */
+    .li_cabecalho li {
+        font-size: 16px; /* Menor em telas pequenas */
+    }
+
+    /* Seção Introdução */
+    #titulo_introducao {
+        font-size: 40px;
+        line-height: 1.15em;
+    }
+
+    #resumo_introducao {
+        font-size: 20px;
+    }
+
+    #logo_escola {
+        width: 90%; /* Ajusta a largura da logo */
+        max-width: 250px;
+        display: none;
+    }
+
+    /* Diretores e Escola */
+    #textos_diretores, #textos_escola, #texto_localizacao {
+        width: 90%; /* Deixa um espaço de 10% nas laterais */
+    }
+
+    #textos_diretores h2, #textos_escola h2, #texto_localizacao h2 {
+        font-size: 40px;
+    }
+
+    #textos_diretores p, #textos_escola p, #texto_localizacao p {
+        font-size: 18px;
+    }
+
+    /* Botões */
+    .botao_diretoresescola {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    /* Rodapé */
+    footer p {
+        font-size: 10px; /* Tamanho menor do rodapé */
+    }
+
+    /* Ajuste geral para evitar overflow */
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Menu de navegação estilo "hamburger" */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu div {
+        width: 100%;
+        height: 4px;
+        background-color: #28272E;
+    }
+
+    .menu-links {
+        display: none; /* Inicialmente escondido */
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .menu-links a {
+        font-size: 18px;
+        color: #28272E;
+        text-decoration: none;
+    }
+
+    .menu-links a:hover {
+        color: #624fce;
+    }
+
+    /* Mostrar menu quando hamburger for clicado */
+    .hamburger-menu.active + .menu-links {
+        display: flex;
+    }
+}
+
+
+
+
 

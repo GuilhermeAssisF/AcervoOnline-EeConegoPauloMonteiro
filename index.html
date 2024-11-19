@@ -9,84 +9,87 @@
     <title>Cônego Paulo Monteiro</title>
 </head>
 <body>
-    <header>
-        <h2 id="titulo_header">ACERVO ONLINE</h2>
-        <div>
-            <ul id="itens_cabecalho" class="li_cabecalho">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="diretores.html">DIRETORES</a></li>
-                <li><a href="escola.html">A ESCOLA</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section id="introducao">
-            <div id="elementos_introducao">
-                <div class="texto_introducao">
-                    <h1 id="titulo_introducao">Escola Cônego Paulo Monteiro</h1>
-                    <h5 id="resumo_introducao">História e biografia dos diretores que contribuíram <br>
-                        para o desenvolvimento da Escola Estadual Cônego <br>
-                        Paulo Monteiro no período de 1949 a 2019.</h5>
+    <div class="container">
+        <header>
+            <h2 id="titulo_header">ACERVO ONLINE</h2>
+            <div id="menu">
+                <ul id="itens_cabecalho" class="li_cabecalho">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="diretores.html">DIRETORES</a></li>
+                    <li><a href="escola.html">A ESCOLA</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </header>
+
+        <main>
+            <section id="introducao">
+                <div id="elementos_introducao">
+                    <div class="texto_introducao">
+                        <h1 id="titulo_introducao">Escola Cônego Paulo Monteiro</h1>
+                        <h5 id="resumo_introducao">História e biografia dos diretores que contribuíram <br>
+                            para o desenvolvimento da Escola Estadual Cônego <br>
+                            Paulo Monteiro no período de 1949 a 2019.</h5>
+                    </div>
+                    <figure>
+                        <img id="logo_escola" src="/img/2oA22ncMhkBpwhWm3eOZOwPbCXd (1) 1.svg" alt="logo da escola cônego paulo monteiro">
+                    </figure>
+                </div>
+                <a id="rolar_final" onclick="rolarPagina()"><img id="seta-rolamento" src="/img/setabaixo.svg" alt=""></a>
+            </section>
+
+            <section class="diretoresEscola">
+                <div id="textos_diretores">
+                    <h2>DIRETORES</h2>
+                    <p>Contaremos um pouco da trajetória dos diretores <br>
+                        que passaram pela nossa escola e deixaram sua <br>
+                        contribuição para a consolidação das atividades <br> 
+                        educacionais oferecidas ao município e da <br>
+                        estruturação desta unidade de ensino, desde 1949.</p>
+
+                    <a class="botao_diretoresescola" href="diretores.html">PÁGINA DOS DIRETORES</a>
+
                 </div>
                 <figure>
-                    <img id="logo_escola" src="/img/2oA22ncMhkBpwhWm3eOZOwPbCXd (1) 1.svg" alt="logo da escola cônego paulo monteiro">
+                        <img src="/img/conego paulo monteiro.png" alt="Foto do fundador da escola.">
+                    <figcaption>Padre Cônego Paulo Monteiro</figcaption>
                 </figure>
-            </div>
-            <a id="rolar_final" onclick="rolarPagina()"><img id="seta-rolamento" src="/img/setabaixo.svg" alt=""></a>
-        </section>
+            </section>
 
-        <section class="diretoresEscola">
-            <div id="textos_diretores">
-                <h2>DIRETORES</h2>
-                <p>Contaremos um pouco da trajetória dos diretores <br>
-                    que passaram pela nossa escola e deixaram sua <br>
-                    contribuição para a consolidação das atividades <br> 
-                    educacionais oferecidas ao município e da <br>
-                    estruturação desta unidade de ensino, desde 1949.</p>
+            <section class="diretoresEscola" id="escola">
+                <div id="textos_escola">
+                    <h2 >A ESCOLA</h2>
+                    <p>O prédio da então escola isolada rural da Vila do <br>
+                        distrito de Jacarini, município de Silvianópolis/MG, <br>
+                        foi inaugurado aos 24 de abril de 1949, recebendo o <br>
+                        nome do vigário da paróquia, Pe. Paulo Monteiro;</p>
+                    <a class="botao_diretoresescola" href="#">
+                            PÁGINA DA ESCOLA
+                    </a>
+                </div>
+                <figure>
+                    <img id="imgIntroducao" src="/img/imagem escola 1.png" alt="Foto da escola.">
+                    <figcaption>ESCOLA CÔNEGO PAULO MONTEIRO</figcaption>
+                </figure>
+            </section>
 
-                <a class="botao_diretoresescola" href="diretores.html">PÁGINA DOS DIRETORES</a>
+            <section id="localizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14804.243747627395!2d-45.9290116!3d-21.9322087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca37ba769dbd15%3A0xf489a3f776da7c34!2sEe%20C%C3%B4nego%20Paulo%20Monteiro!5e0!3m2!1spt-BR!2sbr!4v1730328359965!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="texto_localizacao">
+                    <h2>LOCALIZAÇÃO</h2>
+                    <p>Ee Cônego Paulo Monteiro <br>
+                        R. Maria Onilia Viêira, 202 - Centro, <br>
+                        São João da Mata - MG, <br>
+                        CEP 37568-000</p>
+                </div>
+            </section>
+        </main>
 
-            </div>
-            <figure>
-                    <img src="/img/conego paulo monteiro.png" alt="Foto do fundador da escola.">
-                <figcaption>Padre Cônego Paulo Monteiro</figcaption>
-            </figure>
-        </section>
-
-        <section class="diretoresEscola" id="escola">
-            <div id="textos_escola">
-                <h2 >A ESCOLA</h2>
-                <p>O prédio da então escola isolada rural da Vila do <br>
-                    distrito de Jacarini, município de Silvianópolis/MG, <br>
-                    foi inaugurado aos 24 de abril de 1949, recebendo o <br>
-                    nome do vigário da paróquia, Pe. Paulo Monteiro;</p>
-                <a class="botao_diretoresescola" href="#">
-                        PÁGINA DA ESCOLA
-                </a>
-            </div>
-            <figure>
-                <img src="/img/imagem escola 1.png" alt="Foto da escola.">
-                <figcaption>ESCOLA CÔNEGO PAULO MONTEIRO</figcaption>
-            </figure>
-        </section>
-
-        <section id="localizacao">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14804.243747627395!2d-45.9290116!3d-21.9322087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca37ba769dbd15%3A0xf489a3f776da7c34!2sEe%20C%C3%B4nego%20Paulo%20Monteiro!5e0!3m2!1spt-BR!2sbr!4v1730328359965!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div id="texto_localizacao">
-                <h2>LOCALIZAÇÃO</h2>
-                <p>Ee Cônego Paulo Monteiro <br>
-                    R. Maria Onilia Viêira, 202 - Centro, <br>
-                    São João da Mata - MG, <br>
-                    CEP 37568-000</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Escola Cônego Paulo Monteiro - Instituto Federal do Sul de Minas</p>
-    </footer>
-
+        <footer>
+            <p>Escola Cônego Paulo Monteiro - Instituto Federal do Sul de Minas</p>
+        </footer>
+    </div>
     <script>
         function rolarPagina() {
             window.scrollBy({
@@ -94,6 +97,11 @@
                 left: 0,
                 behavior: 'smooth'
             });
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('itens_cabecalho');
+            menu.classList.toggle('show'); // Alterna a classe "show" para exibir ou esconder o menu
         }
     </script>
      
