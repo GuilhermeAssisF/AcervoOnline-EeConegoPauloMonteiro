@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #F0F0F0;
+}
+
+
+/*Cabecalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 7em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#titulo_header{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 64px;
+}
+
+#itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.li_cabecalho li{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 23px;
+}
+
+.li_cabecalho li a{
+    color: #28272E;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:hover{
+    color: #624fce;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:active{
+    color: #2a6086;
+}
+
+/*Planilha*/
+#donateBtn{
+    background: #28272E;
+    color: #F0F0F0;
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#actions-table h2{
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    
+}
+
+.custom-blue-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5em 7em;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+/* Exemplo de estilos para colunas */
+.col-0 {
+    padding-right: 3em;
+    padding-bottom: 0.2em;
+    padding-top: 0.3em; 
+}
+
+.col-1 {
+    font-style: italic;
+}
+
+#seta-rolamento{
+    padding-top: 3em;
+    width: 4em;
+    transition: 0.6s;
+}
+
+#seta-rolamento:hover{
+    opacity: 0.3;
+}
+
+#actions-table tr {
+    border-bottom: 1px solid rgb(219, 219, 219, 0.3) ; /* Define a linha abaixo de cada linha */
+}
+
+/*Section Fundação da Escola*/
+#fundacao_escola{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#fundacao_escola h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0.4em;
+    padding: 0.2em;
+}
+
+#fundacao_escola p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #28272E;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0.6em;
+    padding: 0 5em 0 5em;
+}
+
+.fotos_escola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.fotos_escola img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Section Ata da Inauguração*/
+#ataInauguracao{
+    background: #28272E;
+    padding: 2em 0 2em 0;
+}
+
+#ataInauguracao h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #F0F0F0;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0.4em;
+    padding: 0.2em;
+}
+
+/*Section Fotos diversas*/
+#fotos_diversas{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #28272E;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0.4em;
+    padding: 0.2em;
+}
+
+
+
+
+
+/*Rodapé*/
+footer{
+    background: #28272E;
+}
+
+footer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 1.5em;
+    color: #F0F0F0;
+    text-align: center;
+}

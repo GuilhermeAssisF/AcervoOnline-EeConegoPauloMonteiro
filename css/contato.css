@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #F0F0F0;
+}
+
+/*Cabecalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 7em;
+    background: #28272E;
+}
+
+a{
+    text-decoration: none;
+}
+
+figcaption{
+    background: rgb(235, 235, 235);
+    padding: 0.3em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+#titulo_header{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #F0F0F0;
+    font-size: 64px;
+}
+
+#itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: #F0F0F0;
+}
+
+.li_cabecalho li{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #F0F0F0;
+    font-size: 23px;
+}
+
+.li_cabecalho li a{
+    color: #F0F0F0;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:hover{
+    color: #579eee;
+    transition: 0.6s;
+}
+
+.li_cabecalho li a:active{
+    color: #2a6086;
+}
+
+/*Contato*/
+#contato{
+    padding: 3em 7em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+#contato h3{
+    font-weight: 700;
+    color: #111013;
+    font-size: 90px;
+    font-family: "Inter", sans-serif;
+    font-size: 3em;
+}
+
+#contato_email {
+    padding-top: 2em;
+    font-size: 0.8em;
+}
+
+.texto_contato{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.texto_contato img{
+    width: 70px;
+    padding-right: 1.3em;
+}
+
+#logo_escola{
+    width: 36em;
+}
+
+/*Localização*/
+#localizacao{
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #28272E;
+}
+
+#texto_localizacao{
+    color: #F0F0F0;
+    font-weight: 700;
+    padding-left: 5em;
+}
+
+#texto_localizacao h2{
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+}
+
+#texto_localizacao p{
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: "Inria Sans", sans-serif;
+}
+
+#localizacao iframe{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Rodapé*/
+footer{
+    background: #F0F0F0;
+}
+
+footer p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 1.5em;
+    color: #28272E;
+    text-align: center;
+}
+
+
