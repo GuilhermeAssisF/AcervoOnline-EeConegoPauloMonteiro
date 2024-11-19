@@ -430,6 +430,7 @@ footer p{
 
     #resumo_introducao {
         font-size: 20px;
+        font-weight: 500;
     }
 
     #logo_escola {
@@ -449,12 +450,13 @@ footer p{
 
     #textos_diretores p, #textos_escola p, #texto_localizacao p {
         font-size: 18px;
+        font-weight: 500;
     }
 
     /* Botões */
     .botao_diretoresescola {
-        font-size: 20px;
-        padding: 10px 20px;
+        font-size: 18px;
+        padding: 10px 15px;
     }
 
     /* Rodapé */
