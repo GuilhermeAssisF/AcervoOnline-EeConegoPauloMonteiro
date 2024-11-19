@@ -317,11 +317,13 @@ footer p{
         font-size: 70px;
         text-align: center;
         line-height: 1.4em;
+
     }
 
     #resumo_introducao {
         font-size: 23px;
         text-align: center;
+        font-weight: 400;
     }
 
     #logo_escola{
@@ -365,6 +367,7 @@ footer p{
     #textos_diretores p, #textos_escola p {
         font-size: 24px;
         line-height: 1.5em;
+        font-weight: 400;
     }
 
     figure{
@@ -430,7 +433,7 @@ footer p{
 
     #resumo_introducao {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     #logo_escola {
@@ -450,7 +453,7 @@ footer p{
 
     #textos_diretores p, #textos_escola p, #texto_localizacao p {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     /* Botões */
