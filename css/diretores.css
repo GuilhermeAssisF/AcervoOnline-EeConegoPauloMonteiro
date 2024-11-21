@@ -222,3 +222,220 @@ footer p{
     color: #F0F0F0;
     text-align: center;
 }
+
+/* Botão Hamburguer */
+#menu {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Esconde o botão por padrão */
+}
+
+#itens_cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* Responsividade para dispositivos móveis e tablets */
+@media (max-width: 1024px) and (max-width: 1366px) {
+    header {
+        padding: 1em 3em;
+        text-align: center;
+    }
+
+    #titulo_header {
+        font-size: 48px;
+    }
+
+    #itens_cabecalho {
+        gap: 20px;
+    }
+
+    .diretor-light figure {
+        margin-bottom: 3.5vw;
+    }
+
+    .li_cabecalho li {
+        font-size: 20px;
+    }
+
+    .textos_diretor h2{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .textos_diretor p{
+        font-size: 1vw;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    #hamburger {
+        display: block; /* Exibe o botão de hambúrguer em telas pequenas */
+    }
+
+    #itens_cabecalho {
+        display: none; /* Esconde os itens do menu por padrão */
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        right: -1vw;
+        background-color: #F0F0F0;
+        width: 100vw;
+        padding: 20px;
+    }
+
+    #itens_cabecalho li {
+        font-size: 20px;
+    }
+
+    #itens_cabecalho.show {
+        display: flex; /* Exibe o menu quando a classe "show" é adicionada */
+    }
+
+    .diretor-light figure {
+        margin-bottom: 3.5vw;
+    }
+
+    .diretor-light {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    .diretor-light img {
+        width: 100%;
+        height: auto;
+    }
+
+    .textos_diretor {
+        padding-left: 0;
+    }
+
+    .textos_diretor h2{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .textos_diretor p{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #titulo_header {
+        font-size: 36px;
+    }
+
+    .li_cabecalho li {
+        font-size: 18px;
+    }
+
+    .table {
+        font-size: 16px;
+    }
+
+    .diretor-light figure {
+        margin-bottom: 3.5vw;
+    }
+
+    #donateBtn {
+        padding: 2em 4em;
+    }
+
+    #actions-table h2 {
+        font-size: 36px;
+    }
+
+    .textos_diretor h2{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .textos_diretor p{
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #ormindamaria p, #reginaferreira p, #mariajose p, #mariaceleste p, #almerinda p, #denize p {
+        font-size: 4vw;
+        text-align: justify;
+        font-weight: 400;
+    }
+
+    #itens_cabecalho {
+        display: none; /* Esconde os itens do menu por padrão */
+        flex-direction: column;
+        gap: 20px;
+        top: 90px;
+        background-color: #F0F0F0;
+        width: 94vw;
+        
+    }
+    
+    #titulo_header {
+        font-size: 28px;
+    }
+
+    .li_cabecalho li {
+        font-size: 16px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    #donateBtn {
+        padding: 2em 3em;
+    }
+
+    #actions-table h2 {
+        font-size: 28px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .diretor-light {
+        flex-direction: column;
+        padding: 1.5em 1em;
+    }
+
+    .diretor-light img {
+        width: 100%;
+        height: auto;
+    }
+
+    .diretor-light figure {
+        margin-bottom: 3.5vw;
+    }
+
+    .textos_diretor {
+        padding-left: 0;
+    }
+
+    .textos_diretor h2{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .textos_diretor p{
+        font-size: 4vw;
+        text-align: center;
+    }
+}
