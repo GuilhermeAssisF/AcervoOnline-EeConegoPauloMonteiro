@@ -238,10 +238,10 @@ footer p{
         gap: 20px;
         text-align: center;
         position: absolute;
-        top: 100px;
+        top: 90px;
         left: 0;
         background-color: #F0F0F0;
-        width: 100%; /* Ajusta largura do menu */
+        width: 89%; /* Ajusta largura do menu */
         padding: 20px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito para destacar o menu */
     }

@@ -149,4 +149,160 @@ footer p{
     text-align: center;
 }
 
+/*Botao Hamburguer*/
+#menu {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Esconde o botão por padrão */
+}
+
+#itens_cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* Responsividade para dispositivos móveis (celulares e tablets) */
+@media (max-width: 1024px) {
+    /* Cabeçalho */
+    header {
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    #titulo_header {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #itens_cabecalho {
+        display: none; /* Esconde os itens do menu */
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 96.9%;
+        background: #28272E;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        padding: 1em;
+    }
+
+    #itens_cabecalho.show {
+        display: flex; /* Exibe o menu quando a classe "show" é adicionada */
+    }
+
+    #hamburger {
+        display: block;
+        color: #F0F0F0; /* Exibe o botão de hambúrguer */
+    }
+
+    /* Contato */
+    #contato {
+        flex-direction: column;
+        margin-top: 2em;
+        margin-bottom: -3em;
+        align-items: center;
+        text-align: center;
+    }
+
+    iframe{
+        margin-bottom: 2em;
+    }
+
+    .texto_contato {
+        margin-bottom: 2em;
+    }
+
+    #logo_escola {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Localização */
+    #localizacao {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    #texto_localizacao {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #texto_localizacao h2 {
+        font-size: 48px;
+    }
+
+    #texto_localizacao p {
+        font-size: 18px;
+        padding: 1em;
+    }
+
+    #localizacao iframe {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Ajustes para telas menores (celulares) */
+    #titulo_header {
+        font-size: 36px;
+    }
+    
+    /* Ajustes para a seção de contato */
+    #contato {
+        padding: 1em; /* Padding geral para dar espaçamento nas laterais */
+        display: flex;
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #contato h3 {
+        font-size: 1.0em; /* Reduzido para caber em telas pequenas */
+    }
+
+    .texto_contato img {
+        width: 50px; /* Ajuste do tamanho das imagens */
+        height: auto; /* Mantém a proporção */
+        margin-bottom: 0.5em; /* Espaçamento abaixo da imagem */
+    }
+
+    #contato_email {
+        font-size: 0.9em; /* Fonte menor para caber melhor */
+    }
+
+    #logo_escola {
+        display: none;
+    }
+
+    .li_cabecalho li {
+        font-size: 18px;
+    }
+
+    #texto_localizacao h2 {
+        font-size: 36px;
+    }
+
+    #texto_localizacao p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+
+
 
