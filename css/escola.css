@@ -201,3 +201,142 @@ footer p{
     color: #F0F0F0;
     text-align: center;
 }
+
+/* Botão Hamburguer */
+#menu {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Esconde o botão por padrão */
+}
+
+#itens_cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    /* Tablets */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 3em;
+    }
+
+    #hamburger {
+        display: block; /* Exibe o botão de hambúrguer em telas pequenas */
+    }
+
+    #itens_cabecalho {
+        display: none; /* Esconde os itens do menu por padrão */
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #F0F0F0;
+        width: 100%; /* Ajusta largura do menu */
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito para destacar o menu */
+    }
+
+    #itens_cabecalho li {
+        font-size: 20px;
+    }
+
+    #itens_cabecalho.show {
+        display: flex; /* Exibe o menu quando a classe "show" é adicionada */
+    }
+
+    #titulo_header {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #itens_cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #donateBtn {
+        padding: 2em 3em;
+    }
+
+    #actions-table h2 {
+        font-size: 36px;
+    }
+
+    #fundacao_escola p {
+        padding: 0 2em;
+        font-size: 20px;
+    }
+
+    /* Ajuste geral para imagens */
+    img {
+        max-width: 100%; /* Evita que as imagens ultrapassem a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: cover; /* Garante que a imagem se adapte ao contêiner */
+    }
+
+    /* Ajuste específico para imagens da galeria */
+    .fotos_escola img {
+        width: 90%; /* Reduz a largura para evitar ultrapassagens */
+        max-width: 300px; /* Limita o tamanho máximo */
+        height: auto; /* Mantém a proporção */
+        margin: auto; /* Centraliza as imagens */
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Celulares */
+    header {
+        flex-direction: column; /* Alinha o cabeçalho verticalmente */
+        padding: 1em; /* Ajusta o espaçamento */
+    }
+
+    #titulo_header {
+        font-size: 32px; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    #itens_cabecalho {
+        flex-direction: column; /* Alinha os links verticalmente */
+        gap: 15px; /* Reduz o espaçamento entre os links */
+    }
+
+    #donateBtn {
+        padding: 2em 1em; /* Reduz o espaçamento interno */
+    }
+
+    #fundacao_escola p {
+        padding: 0 1em; /* Reduz o espaçamento lateral do texto */
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    .fotos_escola {
+        flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+        gap: 10px; /* Reduz o espaçamento entre as imagens */
+    }
+
+    .fotos_escola img {
+        width: 100%; /* Imagens ocupam a largura total do contêiner */
+        height: auto; /* Ajusta proporcionalmente a altura */
+    }
+
+    footer p {
+        font-size: 14px; /* Reduz o tamanho da fonte no rodapé */
+    }
+
+
+}

@@ -20,6 +20,7 @@
                 <li><a href="escola.html">A ESCOLA</a></li>
                 <li><a href="contato.html">CONTATO</a></li>
             </ul>
+            <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
         </div>
     </header>
     <main>
@@ -137,6 +138,11 @@
                 left: 0,
                 behavior: 'smooth'
             });
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('itens_cabecalho');
+            menu.classList.toggle('show'); // Alterna a classe "show" para exibir ou esconder o menu
         }
     </script>
      
