@@ -137,6 +137,16 @@ figcaption{
 
 .diretor-light figure{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+
+.diretor-light figcaption{
+    border-radius: 20px;
+}
+
+.diretor-light img{
+    width: 400px;
+    border-radius: 20px;
 }
 
 .textos_diretor{
