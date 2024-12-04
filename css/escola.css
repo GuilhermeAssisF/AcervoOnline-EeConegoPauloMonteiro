@@ -221,7 +221,7 @@ footer p{
         position: absolute;
         top: 90px;
         left: 0;
-        background-color: #F0F0F0;
+        background-color: #28272E;
         width: 89%; /* Ajusta largura do menu */
         padding: 20px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito para destacar o menu */
@@ -294,6 +294,7 @@ footer p{
     #itens_cabecalho {
         flex-direction: column; /* Alinha os links verticalmente */
         gap: 15px; /* Reduz o espaçamento entre os links */
+        
     }
 
     #donateBtn {
